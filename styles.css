@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: white;
+}
+
+header{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+
+     
+}
+
+.navbar-pinterest{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+a {
+    color: black;
+}
+
+.nav-2 a:hover{
+    border-radius: 50%;
+    background-color: #b1b1b1;
+}
+
+.img-nav-2{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: 0px 1px;
+    padding: 4px;
+    color: #555;
+}
+
+.inicio{
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.buscador{
+ display: flex;
+ align-items: center;
+ gap: .5rem;  
+ background: rgb(225, 225, 225); 
+ padding: 1rem 1rem;
+ border-radius: 2rem;
+ width: 100%;
+}
+
+input{
+    background: rgb(225, 225, 225);
+    border: rgb(225, 225, 225);
+    outline: none;
+}
+
+form{
+    background: rgb(225, 225, 225);
+    border: rgb(225, 225, 225);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 2rem;
+    padding-top: 6rem;
+
+}
+
+.colums{
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.img-card{
+    border-radius: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.card-image{
+    border-radius: 2rem;
+    position: relative;
+}
+
+.card-image:hover .overlay{
+    display: block;
+    
+    
+}
+
+.overlay{
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.btn-save{
+    background-color: rgb(255, 0, 0);
+    padding: .5rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: bold;
+    color: white;
+
+}
+
+.colum-6{
+    display: none;
+   }
+
+/*Estilos tablet*/
+
+@media screen and (max-width: 768px) {
+
+    .icons-desktp{
+       display: none;
+    }   
+   
+    header{
+       display: flex;
+       padding: 1rem;
+       align-items: center;
+       gap: .5rem;
+        
+   }
+   
+   .navbar-pinterest{
+       display: flex;
+       align-items: center;
+       gap: .5rem;
+   }
+   
+   .content {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 1rem;
+       padding: 2rem;
+      padding-top: 6rem; 
+   }
+
+   .colum-6{
+    display: block;
+   }
+   
+   }
+
+/*Estilos mobile 480*/
+
+@media screen and (max-width: 480px) {
+
+ .icons-desktp{
+    display: none;
+ }   
+
+ header{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: .5rem;
+     
+}
+
+.navbar-pinterest{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: 6rem;   
+}
+
+}
+
+/*Estilos mobile 520*/
+
+@media screen and (max-width: 520px) {
+
+    .icons-desktp{
+       display: none;
+    }   
+   
+    header{
+       display: flex;
+       padding: 1rem;
+       align-items: center;
+       gap: .5rem;
+        
+   }
+
+   .buscador-barra{
+    display: none;
+   }
+   
+   .navbar-pinterest{
+       display: flex;
+       align-items: center;
+       gap: 1px;
+   }
+
+   .pinterest-icon{
+    margin: 0 4px;
+   }
+
+   .img-nav-2{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 0px 1px;
+    padding: 3px;
+    color: #555;
+}
+   
+   .content {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 1rem;
+       padding: 1rem 2rem;
+       padding-top: 6rem;
+  
+   }
+   
+   }
